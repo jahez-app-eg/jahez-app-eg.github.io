@@ -1,4 +1,4 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta name="pv" content="3"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>جاهز: خطط ونظم وطور</title>
+<!doctype html><html lang="ar" dir="rtl"><head><meta name="pv" content="4"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>جاهز: خطط ونظم وطور</title>
 <style>
 @font-face{font-family:Cairo;src:url(Cairo.ttf);font-weight:200 1000}
 *{box-sizing:border-box}
@@ -40,7 +40,17 @@ ol{padding:0 22px 0 0;margin:8px 0 0}ol li{margin:8px 0;font-size:15px}
 .ct{display:inline-flex;align-items:center;gap:14px;border:1px solid rgba(255,255,255,.35);background:#070b12;color:#fff;border-radius:6px;padding:16px 26px;font-weight:800;font-size:20px;font-family:inherit;direction:ltr}.ct svg{width:18px;height:18px;stroke:#2b9de0;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.ct[disabled]{opacity:.75}
 .hero .plate{display:inline-flex;align-items:center;gap:12px;padding:14px 16px}.hero .plate .sep{width:1px;align-self:stretch;background:#d5d9e0}.hero .plate img{width:140px;max-width:none}.hero .plate img.u{width:156px}.hero .indep{font-size:12px;color:#aebdd3;margin:10px 0 0}
 .hero .plate{display:inline-block;padding:16px 26px}.hero .plate img{width:230px;max-width:100%}.top{display:flex;justify-content:space-between;align-items:center;padding:14px 0 10px;border-bottom:1px solid rgba(255,255,255,.15)}.top .uc{background:#fff;border-radius:10px;padding:5px 9px;display:flex}.top .uc img{height:34px;width:auto;display:block}.top .nm{font-weight:800;font-size:17px}.top .nm small{display:block;font-weight:500;font-size:11px;color:#aebdd3;letter-spacing:.3px}.indep{font-size:12px;color:#aebdd3;text-align:center;margin:14px 0 0}
+
+.mb{position:fixed;top:10px;right:10px;z-index:30;width:44px;height:44px;border-radius:14px;border:1px solid rgba(255,255,255,.25);background:rgba(15,31,56,.75);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.mb span,.mb span:before,.mb span:after{display:block;width:20px;height:2px;background:#fff;border-radius:2px;content:"";position:relative}.mb span:before{position:absolute;top:-6px}.mb span:after{position:absolute;top:6px}
+.dr{position:fixed;inset:0;z-index:40;visibility:hidden}.dr.o{visibility:visible}.dr .bk{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;transition:opacity .2s}.dr.o .bk{opacity:1}
+.dr nav{position:absolute;top:0;bottom:0;right:0;width:min(78%,300px);background:#13294a;border-left:1px solid rgba(255,255,255,.18);padding:18px;transform:translateX(100%);transition:transform .2s;display:flex;flex-direction:column;gap:6px}.dr.o nav{transform:none}
+.dr nav b{font-size:20px;margin-bottom:8px}.dr nav a{color:#fff;text-decoration:none;font-weight:700;font-size:16px;padding:12px 10px;border-radius:12px;background:rgba(255,255,255,.08)}
 </style></head><body>
+<button class="mb" id="mb" aria-label="القائمة" aria-expanded="false"><span></span></button>
+<div class="dr" id="dr"><div class="bk" id="bk"></div><nav aria-label="القائمة"><b>جاهز</b><a href="privacy.html">الخصوصية</a></nav></div>
+<script>(function(){var d=document.getElementById("dr"),b=document.getElementById("mb");function s(o){d.classList.toggle("o",o);b.setAttribute("aria-expanded",o)}b.onclick=function(){s(!d.classList.contains("o"))};document.getElementById("bk").onclick=function(){s(false)};document.addEventListener("keydown",function(e){if(e.key==="Escape")s(false)})})()</script>
+
 <div class="w">
 <div class="hero"><div class="plate"><img src="logo-crisp.png" alt="جاهز"></div>
 <h1 style="margin-top:14px">جاهز</h1><p class="tag">خطط ونظم وطور</p>
